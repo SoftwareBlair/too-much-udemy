@@ -9,6 +9,7 @@ module.exports = function (config) {
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
       require('karma-firefox-launcher'),
+      require('karma-safari-launcher'),
       require('karma-brave-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
@@ -39,7 +40,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Brave', 'Chrome', 'Firefox'],
+    browsers: ['Firefox'],
     singleRun: false,
     restartOnFileChange: true
   });
