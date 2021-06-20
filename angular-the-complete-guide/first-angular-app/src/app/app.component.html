@@ -1,11 +1,14 @@
 <div class="container">
   <div class="row">
-    <h3>{{ appComponent }}</h3>
+    <h3>{{ appName }}</h3>
     <hr>
   </div>
   <div class="row">
-    <app-servers></app-servers>
-    <app-success-alert></app-success-alert>
-    <app-warning-alert></app-warning-alert>
+    <div class="six columns">
+      <app-servers-form [serversList]="serversList"></app-servers-form>
+    </div>
+    <div class="six columns">
+      <app-servers-list [serversList]="serversList"></app-servers-list>
+    </div>
   </div>
 </div>
