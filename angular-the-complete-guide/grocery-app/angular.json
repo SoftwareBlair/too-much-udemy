@@ -28,8 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "assets/normalize.css",
-              "assets/skeleton.css",
+              "src/assets/normalize.css",
+              "src/assets/skeleton.css",
               "src/styles.scss"
             ],
             "scripts": []
