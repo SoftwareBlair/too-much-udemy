@@ -1,0 +1,80 @@
+header {
+  padding: 8px 12px;
+}
+
+nav {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.app-logo {
+  margin-right: 15px;
+
+  a {
+    color: #404040;
+  }
+}
+
+.app-links {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex: 1;
+
+  ul {
+    display: flex;
+    align-items: baseline;
+    list-style: none;
+  }
+  
+  li {
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    margin: 0 8px 0;
+
+    a {
+      color: gray;
+
+      &:hover, &:focus-within {
+        color: black;
+        cursor: pointer;
+      }
+    }
+
+    &:focus-within a {
+      outline: none;
+    }
+  }
+
+  .dropdown {
+    li ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      visibility: hidden;
+      right: 0;
+      margin-top: 0;
+      padding: 5px 0;
+      width: 100px;
+      border: 1px solid lightgray;
+      transition: all 0.5s ease;
+    }
+    
+    li:hover > ul,
+    li:focus-within > ul,
+    li ul:hover,
+    li ul:focus {
+      color: black;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
